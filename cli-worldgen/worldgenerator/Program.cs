@@ -12,7 +12,7 @@ namespace worldgenerator
         static void Main(string[] args)
         {
             Console.WriteLine("Currently a work in progress...");
-            Generator worldgen = new Generator(10, 10);
+            Generator worldgen = new Generator(25, 100);
             Console.ReadLine();
         }
     }
