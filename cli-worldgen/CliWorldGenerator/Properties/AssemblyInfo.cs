@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("cli-worldgen")]
+[assembly: AssemblyTitle("CliWorldGenerator")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("cli-worldgen")]
+[assembly: AssemblyProduct("CliWorldGenerator")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("9e3b9bd7-87b7-4733-b0a3-38a60dd11239")]
+[assembly: Guid("3f3608ef-00b6-4625-8576-9fe1e7004237")]
 
 // Version information for an assembly consists of the following four values:
 //

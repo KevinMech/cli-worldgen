@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CliWorldGenerator;
 
 namespace worldgenerator
 {
@@ -11,6 +12,7 @@ namespace worldgenerator
         static void Main(string[] args)
         {
             Console.WriteLine("Currently a work in progress...");
+            Generator worldgen = new Generator(10, 10);
             Console.ReadLine();
         }
     }
