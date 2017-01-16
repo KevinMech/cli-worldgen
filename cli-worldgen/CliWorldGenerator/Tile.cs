@@ -3,17 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
+using Colorful;
 
 namespace CliWorldGenerator
 {
     class Tile
     {
-        public int tilenumber { get; }
-        public ConsoleColor tileColor = ConsoleColor.Green;
+        public int TileNumber { get; }
+        public Color TileColor { get; } = Color.LawnGreen;
 
-        public Tile(int tileNumber)
+        public Tile(int tilenumber, Color tilecolor)
         {
-            tilenumber = tileNumber;
+            TileNumber = tilenumber;
+            TileColor = tilecolor;
         }
     }
 }
