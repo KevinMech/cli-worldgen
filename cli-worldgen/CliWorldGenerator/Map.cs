@@ -8,10 +8,10 @@ namespace CliWorldGenerator
 {
     public class Map
     {
-        int Height { get; }
-        int Width { get; }
-        Tile[,] MapTiles { get; }
-        int NumberofTiles { get; }
+        public int Height { get; }
+        public int Width { get; }
+        public Tile[,] MapTiles { get; }
+        public int NumberofTiles { get; }
 
         public Map(int height, int width, Tile[,] maptiles)
         {

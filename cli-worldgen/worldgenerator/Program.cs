@@ -12,7 +12,8 @@ namespace worldgenerator
         static void Main(string[] args)
         {
             Console.WriteLine("Currently a work in progress...");
-            Generator.generate(25, 100);
+            Map map = Generator.generate(25, 100);
+            Display.displayMap(map);
             Console.ReadLine();
         }
     }

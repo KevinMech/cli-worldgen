@@ -17,19 +17,12 @@ namespace CliWorldGenerator
         public static Map generate(int height, int width)
         {
             Tile[,] maptiles = new Tile[height, width];
-            Console.ForegroundColor = System.Drawing.Color.Black;
             int tilenumber = 1;
-            Random rand = new Random();
             for (int column = 0; column < height; column++)
             {
-                Console.WriteLine();
                 for (int row = 0; row < width; row++)
                 {
-                    int random = rand.Next(0, 2);
-                    if (random == 1) Console.BackgroundColor = System.Drawing.Color.OliveDrab;
-                    else Console.BackgroundColor = System.Drawing.Color.LawnGreen;
-                    maptiles[column, row] = new Tile(tilenumber, System.Drawing.Color.Black);
-                    Console.Write(" ", maptiles[column, row].TileColor);
+                    maptiles[column, row] = new Tile(tilenumber, System.Drawing.Color.LawnGreen);
                     tilenumber++;
                 }
             }

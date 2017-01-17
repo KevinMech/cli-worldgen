@@ -11,7 +11,7 @@ namespace CliWorldGenerator
     public class Tile
     {
         public int TileNumber { get; }
-        public Color TileColor { get; } = Color.LawnGreen;
+        public Color TileColor { get; }
 
         public Tile(int tilenumber, Color tilecolor)
         {
