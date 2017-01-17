@@ -8,7 +8,7 @@ using Colorful;
 
 namespace CliWorldGenerator
 {
-    class Tile
+    public class Tile
     {
         public int TileNumber { get; }
         public Color TileColor { get; } = Color.LawnGreen;

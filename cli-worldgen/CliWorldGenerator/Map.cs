@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CliWorldGenerator
 {
-    class Map
+    public class Map
     {
         int Height { get; }
         int Width { get; }

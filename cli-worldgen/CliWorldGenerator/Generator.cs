@@ -14,9 +14,9 @@ namespace CliWorldGenerator
         /// </summary>
         /// <param name="height"></param>
         /// <param name="width"></param>
-        public Generator(int height, int width)
+        public static Map generate(int height, int width)
         {
-            Tile [,] maptiles = new Tile[height, width];
+            Tile[,] maptiles = new Tile[height, width];
             Console.ForegroundColor = System.Drawing.Color.Black;
             int tilenumber = 1;
             Random rand = new Random();
@@ -25,15 +25,16 @@ namespace CliWorldGenerator
                 Console.WriteLine();
                 for (int row = 0; row < width; row++)
                 {
-                    int random = rand.Next(0,2);
+                    int random = rand.Next(0, 2);
                     if (random == 1) Console.BackgroundColor = System.Drawing.Color.OliveDrab;
                     else Console.BackgroundColor = System.Drawing.Color.LawnGreen;
                     maptiles[column, row] = new Tile(tilenumber, System.Drawing.Color.Black);
                     Console.Write(" ", maptiles[column, row].TileColor);
                     tilenumber++;
-                    Map map = new Map(height, width, maptiles);
                 }
             }
+            Map map = new Map(height, width, maptiles);
+            return map;
         }
     }
 }
