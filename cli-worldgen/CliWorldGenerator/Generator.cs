@@ -12,25 +12,26 @@ namespace CliWorldGenerator
         /// <summary>
         /// Initialize map and specify its max width and height.
         /// </summary>
-        /// <param name="Height"></param>
-        /// <param name="Width"></param>
-        public Generator(int Height, int Width)
+        /// <param name="height"></param>
+        /// <param name="width"></param>
+        public Generator(int height, int width)
         {
-            Tile [,] Map = new Tile[Height, Width];
+            Tile [,] maptiles = new Tile[height, width];
             Console.ForegroundColor = System.Drawing.Color.Black;
             int tilenumber = 1;
             Random rand = new Random();
-            for (int column = 0; column < Height; column++)
+            for (int column = 0; column < height; column++)
             {
                 Console.WriteLine();
-                for (int row = 0; row < Width; row++)
+                for (int row = 0; row < width; row++)
                 {
                     int random = rand.Next(0,2);
                     if (random == 1) Console.BackgroundColor = System.Drawing.Color.OliveDrab;
                     else Console.BackgroundColor = System.Drawing.Color.LawnGreen;
-                    Map[column, row] = new Tile(tilenumber, System.Drawing.Color.Black);
-                    Console.Write(" ", Map[column, row].TileColor);
+                    maptiles[column, row] = new Tile(tilenumber, System.Drawing.Color.Black);
+                    Console.Write(" ", maptiles[column, row].TileColor);
                     tilenumber++;
+                    Map map = new Map(height, width, maptiles);
                 }
             }
         }
