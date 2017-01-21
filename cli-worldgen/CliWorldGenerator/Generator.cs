@@ -22,7 +22,7 @@ namespace CliWorldGenerator
             {
                 for (int row = 0; row < width; row++)
                 {
-                    maptiles[column, row] = new Tile(tilenumber, System.Drawing.Color.LawnGreen);
+                    maptiles[column, row] = new Tiles.Grass(tilenumber);
                     tilenumber++;
                 }
             }

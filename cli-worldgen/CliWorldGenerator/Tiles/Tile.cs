@@ -4,19 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
-using Colorful;
 
 namespace CliWorldGenerator
 {
-    public class Tile
+    public abstract class Tile
     {
-        public int TileNumber { get; }
-        public Color TileColor { get; }
+        public int TileNumber { get; set; }
+        public abstract Color TileColor { get; set; }
 
-        public Tile(int tilenumber, Color tilecolor)
+        public Tile(int tilenumber)
         {
             TileNumber = tilenumber;
-            TileColor = tilecolor;
         }
     }
 }
