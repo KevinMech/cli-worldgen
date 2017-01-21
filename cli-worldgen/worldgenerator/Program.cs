@@ -12,7 +12,7 @@ namespace worldgenerator
         static void Main(string[] args)
         {
             Console.WriteLine("Currently a work in progress...");
-            Map map = Generator.generate(25, 100);
+            Map map = Generator.GenerateRandom(25, 100);
             Display.displayMap(map);
             Console.ReadLine();
         }
