@@ -11,10 +11,34 @@ namespace worldgenerator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Currently a work in progress...");
-            Map map = Generator.GenerateRandom(25, 100);
-            Display.displayMap(map);
-            Console.ReadLine();
+            while (true)
+            {
+                Console.WriteLine("Cli World Generator");
+                Console.WriteLine("v 0.1.0");
+                Console.WriteLine("Currently a work in progress...");
+                Console.WriteLine();
+                Console.WriteLine("Which generator would you like to try?");
+                Console.WriteLine("1. Blank Generation");
+                Console.WriteLine("2. Completly Random Generation");
+                string input = Console.ReadLine();
+                Console.Clear();
+                switch (input){
+                    case "1":
+                        {
+                            Map map = Generator.GenerateBlank(25, 100);
+                            Display.displayMap(map);
+                            break;
+                        }
+                    case "2":
+                        {
+                            Map map = Generator.GenerateRandom(25, 100);
+                            Display.displayMap(map);
+                            break;
+                        }
+                }
+                Console.ReadKey();
+                Console.Clear();
+            }
         }
     }
 }
