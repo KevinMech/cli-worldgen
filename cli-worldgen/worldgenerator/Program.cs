@@ -37,6 +37,7 @@ namespace worldgenerator
                         }
                 }
                 Console.ReadKey();
+                Console.BackgroundColor = ConsoleColor.Black;
                 Console.Clear();
             }
         }
