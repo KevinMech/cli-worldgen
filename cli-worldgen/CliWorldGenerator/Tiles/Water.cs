@@ -9,11 +9,11 @@ namespace CliWorldGenerator.Tiles
 {
     class Water : Tile 
     {
-        public override Color TileColor { get; set; }
+        public override Color TileColor { get; }
 
         public Water(int tilenumber) : base (tilenumber)
         {
-            TileColor = Color.DeepSkyBlue;
+            TileColor = Color.SlateBlue;
         }
     }
 }

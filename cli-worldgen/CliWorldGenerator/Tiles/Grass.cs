@@ -9,7 +9,7 @@ namespace CliWorldGenerator.Tiles
 {
     class Grass : Tile 
     {
-        public override Color TileColor { get; set; }
+        public override Color TileColor { get; }
 
         public Grass(int tilenumber) : base (tilenumber)
         {

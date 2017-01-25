@@ -10,7 +10,12 @@ namespace CliWorldGenerator
     public abstract class Tile
     {
         public int TileNumber { get; set; }
-        public abstract Color TileColor { get; set; }
+        public abstract Color TileColor { get; }
+        public Objects Ontop { get; set; }
+
+        public enum Objects {
+            Tree
+        }
 
         public Tile(int tilenumber)
         {
