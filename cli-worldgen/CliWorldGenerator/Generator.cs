@@ -55,5 +55,11 @@ namespace CliWorldGenerator
             Map map = new Map(height, width, maptiles);
             return map;
         }
+
+        public static Map InlandGeneration(int height, int width)
+        {
+            Map map = GenerateBlank(height, width);
+            return map;
+        }
     }
 }

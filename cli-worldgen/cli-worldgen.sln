@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "worldgenerator", "worldgenerator\worldgenerator.csproj", "{E5E47AD7-B581-418C-82C7-982B261930E7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3F3608EF-00B6-4625-8576-9FE1E7004237} = {3F3608EF-00B6-4625-8576-9FE1E7004237}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CliWorldGenerator", "CliWorldGenerator\CliWorldGenerator.csproj", "{3F3608EF-00B6-4625-8576-9FE1E7004237}"
 EndProject
