@@ -56,9 +56,30 @@ namespace CliWorldGenerator
             return map;
         }
 
-        public static Map InlandGeneration(int height, int width)
+        /// <summary>
+        /// Generate land that is within a continent, which can be optionally surrounded by water
+        /// </summary>
+        /// <param name="height"></param>
+        /// <param name="width"></param>
+        /// <param name="treeDensity"></param>
+        /// <returns></returns>
+        public static Map InlandGeneration(int height, int width, int treeDensity)
         {
+            Random rand = new Random();
             Map map = GenerateBlank(height, width);
+
+            //Generate Trees onto map
+            for (int column = 0; column < height; column++)
+            {
+                for (int row = 0; row < width; row++)
+                {
+                    int treechance = rand.Next(0, 100);
+                    if(treechance < treeDensity)
+                    {
+                        map.MapTiles[column, row].Ontop = Tile.Objects.Tree;
+                    }
+                }
+            }
             return map;
         }
     }

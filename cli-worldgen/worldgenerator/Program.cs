@@ -38,15 +38,15 @@ namespace worldgenerator
                         }
                     case "3":
                         {
-                            Map map = Generator.InlandGeneration(25, 100);
+                            Map map = Generator.InlandGeneration(25, 100, 10);
                             Display.displayMap(map);
                             break;
                         }
                 }
                 Console.ReadKey();
-                Console.BackgroundColor = ConsoleColor.Black;
                 Console.Clear();
             }
         }
     }
 }
+ 

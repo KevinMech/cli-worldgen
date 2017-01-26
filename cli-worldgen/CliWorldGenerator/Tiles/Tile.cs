@@ -14,6 +14,7 @@ namespace CliWorldGenerator
         public Objects Ontop { get; set; }
 
         public enum Objects {
+            None,
             Tree
         }
 

@@ -18,9 +18,21 @@ namespace worldgenerator
                 for (int row = 0; row < map.Width; row++)
                 {
                     Console.BackgroundColor = map.MapTiles[column, row].TileColor;
-                    Console.Write(" ");
+                    switch(map.MapTiles[column, row].Ontop)
+                    {
+                        case Tile.Objects.Tree:
+                            Console.ForegroundColor = System.Drawing.Color.Brown;
+                            Console.Write("T");
+                            break;
+
+                        default:
+                            Console.Write(" ");
+                            break;
+                    }
                 }
             }
+            Console.ForegroundColor = System.Drawing.Color.White;
+            Console.BackgroundColor = System.Drawing.Color.Black;
         }
     }
 }
