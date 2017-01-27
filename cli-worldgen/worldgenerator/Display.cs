@@ -10,6 +10,10 @@ namespace worldgenerator
 {
     class Display
     {
+        /// <summary>
+        /// Draws the map onto the screen
+        /// </summary>
+        /// <param name="map">Map that will be drawn onto screen</param>
         public static void displayMap(Map map)
         {
             for (int column = 0; column < map.Height; column++)
@@ -17,7 +21,9 @@ namespace worldgenerator
                 Console.WriteLine();
                 for (int row = 0; row < map.Width; row++)
                 {
+                    //Draws the color of the currently selected tile onto the screen
                     Console.BackgroundColor = map.MapTiles[column, row].TileColor;
+                    //Draws the object ontop of the tile if one exists
                     switch(map.MapTiles[column, row].Ontop)
                     {
                         case Tile.Objects.Tree:

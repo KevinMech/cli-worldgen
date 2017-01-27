@@ -9,10 +9,10 @@ namespace CliWorldGenerator
     public class Generator
     {
         /// <summary>
-        /// Create and initiliaze a new, blank map full of grass tiles
+        /// Create and initiliaze a new, blank canvas to use as a map
         /// </summary>
-        /// <param name="height"></param>
-        /// <param name="width"></param>
+        /// <param name="height">How many tiles high the map will be</param>
+        /// <param name="width">How many tiles wide the map will be</param>
         /// <returns></returns>
         public static Map GenerateBlank(int height, int width)
         {
@@ -33,8 +33,8 @@ namespace CliWorldGenerator
         /// <summary>
         /// Generate a map with tiles placed around at completly random places
         /// </summary>
-        /// <param name="height"></param>
-        /// <param name="width"></param>
+        /// <param name="height">How many tiles high the map will be</param>
+        /// <param name="width">How many tiles wide the map will be</param>
         /// <returns></returns>
         public static Map GenerateRandom(int height, int width)
         {
@@ -58,16 +58,17 @@ namespace CliWorldGenerator
         /// <summary>
         /// Generate land that is within a continent, which can be optionally surrounded by water
         /// </summary>
-        /// <param name="height"></param>
-        /// <param name="width"></param>
-        /// <param name="treeDensity"></param>
+        /// <param name="height">How many tiles high the map will be</param>
+        /// <param name="width">How many tiles wide the map will be</param>
+        /// <param name="treeDensity">The amount of trees that will be generated on the map.
+        /// Limit: 0 - 100. 0 for none, 100 for map full</param>
         /// <returns></returns>
         public static Map InlandGeneration(int height, int width, int treeDensity)
         {
             Random rand = new Random();
             Map map = GenerateBlank(height, width);
 
-            //Generate Trees onto map
+            //Generate Trees onto map tiles
             for (int column = 0; column < height; column++)
             {
                 for (int row = 0; row < width; row++)

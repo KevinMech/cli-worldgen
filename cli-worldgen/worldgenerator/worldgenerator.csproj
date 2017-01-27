@@ -7,8 +7,8 @@
     <ProjectGuid>{E5E47AD7-B581-418C-82C7-982B261930E7}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>worldgenerator</RootNamespace>
-    <AssemblyName>worldgenerator</AssemblyName>
+    <RootNamespace>WorldGenerator</RootNamespace>
+    <AssemblyName>WorldGenerator</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
