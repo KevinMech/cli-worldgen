@@ -14,7 +14,7 @@ namespace worldgenerator
             while (true)
             {
                 Console.WriteLine("Cli World Generator");
-                Console.WriteLine("v 0.1.1");
+                Console.WriteLine("v 0.1.2");
                 Console.WriteLine("Currently a work in progress...");
                 Console.WriteLine();
                 Console.WriteLine("Which generator would you like to try?");
@@ -38,7 +38,7 @@ namespace worldgenerator
                         }
                     case "3":
                         {
-                            Map map = Generator.InlandGeneration(25, 100, 10);
+                            Map map = Generator.InlandGeneration(25, 100, 5);
                             Display.displayMap(map);
                             break;
                         }
