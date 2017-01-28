@@ -9,12 +9,12 @@ namespace worldgenerator
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             while (true)
             {
                 Console.WriteLine("Cli World Generator");
-                Console.WriteLine("v 0.1.2");
+                Console.WriteLine("v0.2.0");
                 Console.WriteLine("Currently a work in progress...");
                 Console.WriteLine();
                 Console.WriteLine("Which generator would you like to try?");
