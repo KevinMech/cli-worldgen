@@ -38,7 +38,7 @@ namespace worldgenerator
                         }
                     case "3":
                         {
-                            Map map = Generator.InlandGeneration(25, 100, 5);
+                            Map map = Generator.GenerateInland(25, 100, 5);
                             Display.displayMap(map);
                             break;
                         }

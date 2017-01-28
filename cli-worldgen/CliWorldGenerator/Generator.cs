@@ -63,7 +63,7 @@ namespace CliWorldGenerator
         /// <param name="treeDensity">The amount of trees that will be generated on the map.
         /// Limit: 0 - 100. 0 for none, 100 for map full</param>
         /// <returns></returns>
-        public static Map InlandGeneration(int height, int width, int treeDensity)
+        public static Map GenerateInland(int height, int width, int treeDensity)
         {
             Random rand = new Random();
             Map map = GenerateBlank(height, width);
